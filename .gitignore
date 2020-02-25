@@ -1,0 +1,4 @@
+/api/node_modules
+/api/.env.production
+/api/.env.depelopment
+/client/node_modules

@@ -1,0 +1,46 @@
+$palette: (
+    grey:#EFEFEF
+);
+
+html {
+    height: 100%;
+body {
+    padding-top: 0 !important;
+    height: 100%;
+    margin: 0;
+    #root {
+        height: 100%;
+        .builder {
+            display: flex;
+            flex-direction: stretch;
+            height: 100%;
+            &-draggables {
+                height: 100%;
+                background: map-get($palette, grey);
+                padding: 5px;
+                overflow: hidden;
+                position: sticky;
+                width: 250px;
+                top: 0;
+                z-index: 10;
+            }
+            &-droppables {
+                padding: 15px;
+                width: 100%;
+                > div {
+                    margin-bottom: 20px;
+                }
+                .content {
+                    .draggable-component {
+                        display: block;
+                        float: none;
+                        margin: 0;
+                        width: 100%;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+}
